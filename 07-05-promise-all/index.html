@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const baseUrl = "html://jsonplaceholder.typecode.com";
+
+      async function getTodos() {
+        Promise.all([
+          fetch(`${baseUrl}/todos/1`).then((res) => res.json()),
+          fetch(`${baseUrl}/todos/2`).then((res) => res.json()),
+          fetch(`${baseUrl}/todos/3`).then((res) => res.json()),
+        ]);
+
+        return [firstTodo, secondTodo, thirdTodo];
+      }
+
+      const todos = getTodos();
+    </script>
+  </body>
+</html>
