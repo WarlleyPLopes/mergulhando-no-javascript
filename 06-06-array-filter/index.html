@@ -14,8 +14,12 @@
         { name: "Marcos", grade: 5 },
       ];
 
-      const flushed = students.filter((pupil) => {
-        return pupil.grade < 6;
+      const reprovados = students.filter((aluno) => {
+        return aluno.grade < 6;
+      });
+
+      const aprovados = students.filter((aluno) => {
+        return aluno.grade >= 6;
       });
     </script>
   </body>

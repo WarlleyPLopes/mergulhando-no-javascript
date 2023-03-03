@@ -1,25 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <title>Document</title>
   </head>
   <body>
     <script>
       class Human {
-        hungry = true;
+        fome = true;
+        awake = true;
 
         eat() {
-          this.hungry = false;
+          this.fome = false;
         }
       }
 
-      const person = new Human();
-
       Human.prototype.sleep = function () {
-        this.awakr = false;
+        this.awake = false;
       };
 
-      person.sleep();
+      const pessoa = new Human();
     </script>
   </body>
 </html>

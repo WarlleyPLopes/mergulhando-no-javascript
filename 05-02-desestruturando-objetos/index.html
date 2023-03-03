@@ -6,19 +6,29 @@
   </head>
   <body>
     <script>
-      const person = {
-        name: "Italo",
-        age: 14,
-        contact: {
-          foo: {
-            bar: {
-              email: "warlleylopes@algaworks.com",
+      const pessoa = {
+        nome: "Warlley",
+        idade: 21,
+        contato: {
+          teste1: {
+            teste2: {
+              email: "warlley@gmail.com",
             },
           },
         },
       };
 
-      const { name: batata } = person;
+      const {
+        nome,
+        idade,
+        contato: {
+          teste1: {
+            teste2: { email },
+          },
+        },
+      } = pessoa;
+
+      const { nome: batata } = pessoa;
     </script>
   </body>
 </html>

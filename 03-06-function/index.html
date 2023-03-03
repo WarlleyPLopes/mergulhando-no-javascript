@@ -5,23 +5,23 @@
   </head>
   <body>
     <script>
-      function greet() {
+      function saudar() {
         console.log(this);
       }
 
       const me = {
         name: "Warlley",
-        greet() {
+        saudar() {
           console.log(this);
           return "batata";
         },
       };
 
-      function getRemaingYearsToMajority(age) {
-        return 18 - age;
+      function anosFaltantesParaMaiorIdade(idade) {
+        return 18 - idade;
       }
 
-      const remainingYears = getRemaingYearsToMajority(15);
+      const remainingYears = anosFaltantesParaMaiorIdade(15);
     </script>
   </body>
 </html>

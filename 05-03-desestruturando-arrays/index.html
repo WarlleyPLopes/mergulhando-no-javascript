@@ -6,19 +6,28 @@
   </head>
   <body>
     <script>
-      const fruits = ["banana", "morango", "manga"];
-      const person1 = { name: "Joaquim", age: 32 };
-      const person2 = { name: "Jonas", age: 33 };
-      const person3 = { name: "João", age: 34 };
+      const frutas = ["banana", "morango", "manga"];
 
-      const friends = [person1, person2, person3];
+      const [primeiroItem, segundoItem] = frutas;
 
-      const chart = [
+      const pessoa = { nome: "Warlley", idade: 21 };
+      const pessoa2 = { nome: "Karen", idade: 23 };
+      const pessoa3 = { nome: "Daniel", idade: 23 };
+
+      const amigos = [pessoa, pessoa2, pessoa3];
+
+      const [, , { nome }] = amigos;
+      // modo antigo
+      //      const segundaPessoa = amigos[1];
+      //      const nome = segundaPessoa.nome;
+
+      const plano = [
         [1, 2],
         [3, 4],
         [5, 6],
       ];
-      const [, , [zx, y]] = chart;
+
+      const [, [, y]] = plano;
     </script>
   </body>
 </html>

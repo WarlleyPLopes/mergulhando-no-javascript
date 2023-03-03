@@ -1,33 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <title>Document</title>
   </head>
   <body>
     <script>
       class Human {
-        hungry = true;
-        name;
-        age;
-        sex;
+        fome = true;
+        nome;
+        idade;
+        genero;
 
         constructor(props) {
-          if (!props.name) throw Erro(`Nome é obrigatório!`);
-          this.name = props.name;
-          this.age = props.age;
-          this.sex = props.sex;
+          if (!props.nome) {
+            throw Error("Nome é obrigatório");
+          }
+          this.nome = props.nome;
+          this.idade = props.idade;
+          this.genero = props.genero;
         }
 
         eat() {
-          this.hungry = false;
+          this.fome = false;
         }
       }
 
-      const person = new Human({
-        name: `Warlley`,
-        age: 21,
-        sex: `male`,
+      const pessoa = new Human({
+        nome: "Warlley",
+        idade: 21,
+        genero: "masculino",
       });
+      pessoa.eat();
     </script>
   </body>
 </html>

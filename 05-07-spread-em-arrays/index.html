@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <title>Document</title>
   </head>
   <body>
     <script>
-      const parts = ["ombro", "joelho"];
-      const sentence = ["cabeça", ...parts, "pé"];
+      const pecas = ["ombro", "joelho"];
+      const sentence = ["cabeça", ...pecas, "pe"];
+      console.log(sentence);
 
-      const immutableArray = ["select", "*", "from"];
-      const mutableArray = [...immutableArray];
-      mutableArray.push("batata");
+      const listaArray = ["pessoa", "pessoa2", "pessoa3"];
+      const listaArray2 = [...listaArray];
+      listaArray2.push("batata");
     </script>
   </body>
 </html>

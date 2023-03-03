@@ -14,11 +14,15 @@
         { name: "Marcos", grade: 5 },
       ];
 
-      const classroomTotalPoints = students.reduce((prev, current) => {
-        console.log(prev);
-        console.log(current);
-        return prev + current.grade;
+      const pontosTotais = students.reduce((nInicial, nGrade) => {
+        console.log(nInicial);
+        console.log(nGrade);
+        return nInicial + nGrade.grade;
       }, 0);
+
+      console.log(pontosTotais);
+      /* let gradeTotal = 0;
+      students.forEach((aluno) => (gradeTotal += aluno.grade)); */
     </script>
   </body>
 </html>

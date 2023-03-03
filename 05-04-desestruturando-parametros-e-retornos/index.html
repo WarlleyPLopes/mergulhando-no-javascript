@@ -6,18 +6,18 @@
   </head>
   <body>
     <script>
-      function createUser(user) {
+      function criarUsuario({ nome, idade, email }) {
         return {
-          name,
-          age,
-          contact: { email },
+          nome,
+          idade,
+          contato: { email },
         };
       }
 
-      const user = createUser({
-        name: "Lucas",
-        age: 32,
-        email: "lucas@mail.com",
+      const usuario = criarUsuario({
+        nome: "Lucas",
+        idade: 21,
+        email: "Warlley@gmail.com",
       });
     </script>
   </body>

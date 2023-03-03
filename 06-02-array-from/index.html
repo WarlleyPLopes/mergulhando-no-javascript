@@ -6,12 +6,11 @@
   </head>
   <body>
     <script>
-      function greet() {
-        const args = array.from(arguments, function (name) {
-          return name + "!";
+      function comprimentar() {
+        const args = Array.from(arguments, function (nome) {
+          return nome + "!";
         });
-
-        arguments.array.forEach((element) => {
+        args.forEach((arguments) => {
           console.log(`Hello, ${arguments}`);
         });
       }

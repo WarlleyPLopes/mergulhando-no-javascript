@@ -13,3 +13,19 @@ function checkAge(person) {
 }
 
 checkAge(me);
+
+let eu = {
+  nome: "warlley",
+  idade: 21,
+};
+
+function checarIdade(pessoa) {
+  console.log(`A idade da pessoa é: ${pessoa.idade}`);
+  if (pessoa.idade >= 18) {
+    console.log(`${pessoa.nome} é maior de idade`);
+  } else {
+    console.log(`${pessoa.nome} é menor de idade`);
+  }
+}
+
+checarIdade(eu);
